@@ -10,10 +10,10 @@ const Posts = () => {
     const scrollRef = useRef()
 
     useEffect(() => {
-        const resize = (e) => {
+        const resize = () => {
             translateY.current = 0
             headerRef.current.style.transform = `translateY(${0}px)`
-            scrollRef.current.style.top = -headerRef.current.clientHeight + 'px'
+            scrollRef.current.style.top = 0 + 'px'
             scrollRef.current.scrollTo(0, 0)
         }
         window.addEventListener('resize', resize)
