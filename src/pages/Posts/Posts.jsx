@@ -12,7 +12,7 @@ const Posts = () => {
     useEffect(() => {
         const resize = (e) => {
             translateY.current = 0
-            headerRef.current.style.transform = `translateY(${-translateY.current}px)`
+            headerRef.current.style.transform = `translateY(${0}px)`
             scrollRef.current.style.top = -headerRef.current.clientHeight + 'px'
             scrollRef.current.scrollTo(0, 0)
         }
