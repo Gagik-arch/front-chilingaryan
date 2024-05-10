@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Montserrat, serif;
+}
+
+html,
+body,
+#root {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

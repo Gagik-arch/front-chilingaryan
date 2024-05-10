@@ -1,0 +1,41 @@
+.root {
+    min-width: 2.2rem;
+    padding: 10px;
+    height: 2.2rem;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover-gray);
+    }
+
+    &:has(.input:focus) {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+}
+
+.input {
+    height: 100%;
+    width: 0;
+    outline: none;
+    border: none;
+    transition: all 180ms ease;
+    background-color: transparent;
+    &:focus {
+        width: 100px;
+    }
+
+    &:not(:focus) {
+        background-color: transparent;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+}

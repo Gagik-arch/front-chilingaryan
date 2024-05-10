@@ -1,0 +1,46 @@
+.root {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    &:img {
+        width: 100%;
+    }
+}
+
+.modal_header {
+    &:h1 {
+        margin: 0;
+    }
+}
+
+.tag {
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.optional_info {
+    margin-top: 20px;
+}
+
+.group {
+    display: flex;
+    gap: 0 6px;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,59 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    max-width: 340px;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 160ms linear;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+.root img {
+    width: 100%;
+}
+
+.tag {
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    gap: 0 6px;
+    font-size: 12px;
+}
+.autor {
+    font-weight: 500;
+}
+
+.date,
+.views,
+.text {
+    color: var(--gray-color);
+}
+
+.text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .root {
+        width: 100%;
+        max-width: max-content;
+    }
+}

@@ -1,0 +1,35 @@
+.root {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}
+
+.block {
+    position: relative;
+    background-color: white;
+    padding: 26px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close_icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: var(--hover-gray);
+    }
+}
